@@ -46,7 +46,7 @@
                                             </clipPath>
                                         </defs>
                                     </svg>
-                                </a><a><button class="modal__close-btn"><span></span><span></span></button></a></div>
+                                </a><button class="modal__close-btn" type="button" data-modal-close="menu"><span></span><span></span></button></div>
                             <div class="modal-menu__menu-wrapper">
                                 <ul class="modal-menu__menu">
                                     <li class="menu__item"><a href="/">Главная</a></li>
@@ -493,9 +493,85 @@
                     <div class="triangle projects__triangle--tr2"><svg class="i-tr">
                             <use xlink:href="#tr"></use>
                         </svg></div>
-                    <div class="projects__top">
-                        <h2 class="t-h2">прирастаем проектами</h2>
-                        <div class="projects__swiper-nav swiper-nav media-max--mob">
+                    <div class="projects__wrapper">
+                        <div class="projects__top">
+                            <h2 class="t-h2">прирастаем проектами</h2>
+                            <div class="projects__swiper-nav swiper-nav media-max--mob">
+                                <div class="nav-item nav__prev" data-slide="prev"><button class="btn">
+                                        <div class="btn__circle"><svg class="i-arrow-right">
+                                                <use xlink:href="#arrow-right"></use>
+                                            </svg></div>
+                                    </button></div>
+                                <div class="nav-item nav__next" data-slide="next"><button class="btn">
+                                        <div class="btn__circle"><svg class="i-arrow-right">
+                                                <use xlink:href="#arrow-right"></use>
+                                            </svg></div>
+                                    </button></div>
+                            </div>
+                        </div>
+                        <div class="projects__cards-wrapper swiper swiper-projects">
+                            <div class="projects__cards swiper-wrapper"><a class="projects__card-wrapper swiper-slide" href="/insider.html">
+                                    <div class="projects__card-city">Москва</div>
+                                    <div class="projects__card" style="background-image:url(assets/img/projects/proj1.png)">
+                                        <div class="projects__card-info">
+                                            <div class="info-title">INSIDER</div>
+                                        </div>
+                                    </div>
+                                    <div class="projects__card-part">
+                                        <div class="projects__card-description">Комплекс апартаментов INSIDER</div>
+                                        <div class="projects__card-city">Москва</div>
+                                    </div>
+                                </a><a class="projects__card-wrapper swiper-slide" href="/#.html">
+                                    <div class="projects__card-city">Тверь</div>
+                                    <div class="projects__card" style="background-image:url(assets/img/projects/proj2.png)">
+                                        <div class="projects__card-info">
+                                            <div class="info-title info-title--less">Мичуринский</div>
+                                        </div>
+                                    </div>
+                                    <div class="projects__card-part">
+                                        <div class="projects__card-description">Комплексная застройка МИЧУРИНСКИЙ</div>
+                                        <div class="projects__card-city">Тверь</div>
+                                    </div>
+                                </a><a class="projects__card-wrapper swiper-slide" href="/#.html">
+                                    <div class="projects__card-city">АНАПА</div>
+                                    <div class="projects__card" style="background-image:url(assets/img/projects/proj3.png)">
+                                        <div class="projects__card-info">
+                                            <div class="info-title">Holiday House</div>
+                                        </div>
+                                    </div>
+                                    <div class="projects__card-part">
+                                        <div class="projects__card-description">Комплексная застройка HOLIDAY HOUSE</div>
+                                        <div class="projects__card-city">АНАПА</div>
+                                    </div>
+                                </a><a class="projects__card-wrapper swiper-slide" href="/#.html">
+                                    <div class="projects__card-city">пенза</div>
+                                    <div class="projects__card" style="background-image:url(assets/img/projects/proj4.png)">
+                                        <div class="projects__card-info">
+                                            <div class="info-title">supernova</div>
+                                        </div>
+                                    </div>
+                                    <div class="projects__card-part">
+                                        <div class="projects__card-description">Комплексная застройка SUPERNOVA</div>
+                                        <div class="projects__card-city">пенза</div>
+                                    </div>
+                                </a><a class="projects__card-wrapper swiper-slide" href="/#.html">
+                                    <div class="projects__card-city">АНАПА</div>
+                                    <div class="projects__card" style="background-image:url(assets/img/projects/proj5.png)">
+                                        <div class="projects__card-info">
+                                            <div class="info-title">Anapolis Residence</div>
+                                        </div>
+                                    </div>
+                                    <div class="projects__card-part">
+                                        <div class="projects__card-description">Комплексная застройка ANAPOLIS RESIDENCE</div>
+                                        <div class="projects__card-city">АНАПА</div>
+                                    </div>
+                                </a></div>
+                        </div><a class="btn projects__btn media-max--mob" href="/projects.html"><span class="btn__text">Увидеть больше</span>
+                            <div class="btn__circle"><svg class="i-arrow-right">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg></div>
+                        </a>
+                        <div class="projects__swiper-nav swiper-nav media-min--mob">
                             <div class="nav-item nav__prev" data-slide="prev"><button class="btn">
                                     <div class="btn__circle"><svg class="i-arrow-right">
                                             <use xlink:href="#arrow-right"></use>
@@ -507,80 +583,6 @@
                                         </svg></div>
                                 </button></div>
                         </div>
-                    </div>
-                    <div class="projects__cards-wrapper swiper swiper-projects">
-                        <div class="projects__cards swiper-wrapper"><a class="projects__card-wrapper swiper-slide" href="/insider.html">
-                                <div class="projects__card-city">Москва</div>
-                                <div class="projects__card" style="background-image:url(assets/img/projects/proj1.png)">
-                                    <div class="projects__card-info">
-                                        <div class="info-title">INSIDER</div>
-                                    </div>
-                                </div>
-                                <div class="projects__card-part">
-                                    <div class="projects__card-description">Комплекс апартаментов INSIDER</div>
-                                    <div class="projects__card-city">Москва</div>
-                                </div>
-                            </a><a class="projects__card-wrapper swiper-slide" href="/#.html">
-                                <div class="projects__card-city">Тверь</div>
-                                <div class="projects__card" style="background-image:url(assets/img/projects/proj2.png)">
-                                    <div class="projects__card-info">
-                                        <div class="info-title info-title--less">Мичуринский</div>
-                                    </div>
-                                </div>
-                                <div class="projects__card-part">
-                                    <div class="projects__card-description">Комплексная застройка МИЧУРИНСКИЙ</div>
-                                    <div class="projects__card-city">Тверь</div>
-                                </div>
-                            </a><a class="projects__card-wrapper swiper-slide" href="/#.html">
-                                <div class="projects__card-city">АНАПА</div>
-                                <div class="projects__card" style="background-image:url(assets/img/projects/proj3.png)">
-                                    <div class="projects__card-info">
-                                        <div class="info-title">Holiday House</div>
-                                    </div>
-                                </div>
-                                <div class="projects__card-part">
-                                    <div class="projects__card-description">Комплексная застройка HOLIDAY HOUSE</div>
-                                    <div class="projects__card-city">АНАПА</div>
-                                </div>
-                            </a><a class="projects__card-wrapper swiper-slide" href="/#.html">
-                                <div class="projects__card-city">пенза</div>
-                                <div class="projects__card" style="background-image:url(assets/img/projects/proj4.png)">
-                                    <div class="projects__card-info">
-                                        <div class="info-title">supernova</div>
-                                    </div>
-                                </div>
-                                <div class="projects__card-part">
-                                    <div class="projects__card-description">Комплексная застройка SUPERNOVA</div>
-                                    <div class="projects__card-city">пенза</div>
-                                </div>
-                            </a><a class="projects__card-wrapper swiper-slide" href="/#.html">
-                                <div class="projects__card-city">АНАПА</div>
-                                <div class="projects__card" style="background-image:url(assets/img/projects/proj5.png)">
-                                    <div class="projects__card-info">
-                                        <div class="info-title">Anapolis Residence</div>
-                                    </div>
-                                </div>
-                                <div class="projects__card-part">
-                                    <div class="projects__card-description">Комплексная застройка ANAPOLIS RESIDENCE</div>
-                                    <div class="projects__card-city">АНАПА</div>
-                                </div>
-                            </a></div>
-                    </div><a class="btn projects__btn media-max--mob" href="/projects.html"><span class="btn__text">Увидеть больше</span>
-                        <div class="btn__circle"><svg class="i-arrow-right">
-                                <use xlink:href="#arrow-right"></use>
-                            </svg></div>
-                    </a>
-                    <div class="projects__swiper-nav swiper-nav media-min--mob">
-                        <div class="nav-item nav__prev" data-slide="prev"><button class="btn">
-                                <div class="btn__circle"><svg class="i-arrow-right">
-                                        <use xlink:href="#arrow-right"></use>
-                                    </svg></div>
-                            </button></div>
-                        <div class="nav-item nav__next" data-slide="next"><button class="btn">
-                                <div class="btn__circle"><svg class="i-arrow-right">
-                                        <use xlink:href="#arrow-right"></use>
-                                    </svg></div>
-                            </button></div>
                     </div>
                 </section>
                 <section class="news section-index" data-anchor="page-7">
